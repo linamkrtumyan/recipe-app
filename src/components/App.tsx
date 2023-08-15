@@ -27,19 +27,21 @@ function App() {
     <section>
       <Header />
       {/* <User /> */}
-      <CreateRecipe />
-      <div>
-        <p>If you wanna find</p>
+      <div style={{ display: "flex" }}>
+        <CreateRecipe />
         <div>
-          <input
-            type="search"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder="Enter search term"
-          />
-          <button onClick={handleSearch}>Search</button>
+          <div>
+            <input
+              type="search"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              placeholder="Enter search term"
+            />
+            <button onClick={handleSearch}>Search</button>
+          </div>
         </div>
       </div>
+
       <div>
         {isLoading ? (
           <div>Loading...</div>
