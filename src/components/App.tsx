@@ -42,7 +42,7 @@ function App() {
         </div>
       </div>
 
-      <div>
+      <div style={{display:'flex', flexWrap:'wrap', gap:"10px"}} >
         {isLoading ? (
           <div>Loading...</div>
         ) : data ? (
